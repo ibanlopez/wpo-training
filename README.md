@@ -26,8 +26,6 @@ In this one-day training, you'll learn how to make your website _fast_, and keep
 - Measure them.
 - Improve your website performance.
 
-
-
 ### Benefits
 
 - Know why website performance is important for your project and business success on the web.
