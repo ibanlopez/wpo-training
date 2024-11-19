@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WPO Training Shop</title>
+
+    <!-- Google Fonts -->
+    <!-- Default embed code for "Fira Sans" with default options in the UI -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <script>
+      const API_BASE_URL = `${location.protocol}//${location.host}`;
+      const STATIC_BASE_URL = `${location.protocol}//${location.host}`;
+    </script>
+    <script src="/assets/js/scripts.js"></script>
+    <script src="/assets/js/promo.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="container flex-row align-center space-between">
+        <a href="/" class="site-logo flex align-center flex-gap-10">
+          <div class="site-icon">
+            <img
+              src="/assets/img/devmugs-logo.png"
+              alt="Developer Mugs Online"
+            />
+          </div>
+          <h1 class="flex-column">
+            <span>Developer Mugs</span>
+            <em>Online</em>
+          </h1>
+        </a>
+        <div class="cart">
+          <a href="/cart" class="flex align-center"
+            >Cart<span id="cart-count">0</span></a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="promo-banner">
+        <!-- This is filled in by promo.js -->
+      </section>
+
+      <section class="hero">
+        <div class="illustration">
+          <img
+            class="desktop"
+            src="/assets/img/hero-desktop.png"
+            alt="Developer Stickers"
+          />
+          <img
+            class="mobile"
+            src="/assets/img/hero-mobile.png"
+            alt="Developer Stickers"
+          />
+        </div>
+        <!-- NOTE: As of Chrome 129, we can trick it by hiding the LCP element behind a transparent element -->
+        <!-- <div class="overlay"></div> -->
+        <div class="hero-content">
+          <div class="container flex-column justify-center">
+            <h1>Level up your developer workplace</h1>
+            <p>
+              Grab our exclusive developer Mugs and show off your love/hate for
+              JavaScript and the web.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured-products container">
+        <h2 class="mb-20">Featured Products</h2>
+        <div class="product-grid">
+          <div class="product-card">
+            <a href="/products/coding-mug" class="mb-20">
+              <img
+                src="/assets/img/coding-mug.png"
+                alt="Coding Mug"
+                loading="lazy"
+              />
+              <h2>Coding Mug</h2>
+              <p>
+                Get your hands on this awesome Coding Mug, featuring our focused
+                software engineer in front of his computer!
+              </p>
+            </a>
+            <button
+              type="button"
+              class="add-to-cart btn-primary"
+              data-product-id="1"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+          <div class="product-card">
+            <a href="/products/good-day-to-debug-mug" class="mb-20">
+              <img
+                src="/assets/img/debugging-mug.png"
+                alt="Good Day to Debug Mug"
+              />
+              <h2>Good Day to Debug Mug</h2>
+              <p>
+                Channel your inner warrior with this epic Debug Metrics Mug.
+                Debug with honor.
+              </p>
+            </a>
+            <button
+              type="button"
+              class="add-to-cart btn-primary"
+              data-product-id="2"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+          <div class="product-card">
+            <a href="/products/js-shit-happens-mug" class="mb-20">
+              <img
+                src="/assets/img/js-shit-happens-mug.png"
+                alt="JavaScript Happens Mug"
+              />
+              <h2>JavaScript Happens</h2>
+              <p>
+                Embrace the inevitable. You can't stop it. JavaScript will
+                happen.
+              </p>
+            </a>
+            <button
+              type="button"
+              class="add-to-cart btn-primary"
+              data-product-id="3"
+            >
+              Add to Cart
+            </button>
+          </div>
+
+          <div class="product-card">
+            <a href="/products/js-mug" class="mb-20">
+              <img src="/assets/img/js-mug.png" alt="Js Mug" />
+              <h2>Js Mug</h2>
+              <p>
+                Develop JavaScript like crazy. You always need more JavaScript.
+              </p>
+            </a>
+            <button
+              type="button"
+              class="add-to-cart btn-primary"
+              data-product-id="4"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="callouts container">
+        <div class="callout">
+          <picture>
+            <img
+              src="/assets/img/callout-1.png"
+              alt="Express Your Developer Personality"
+            />
+          </picture>
+          <div class="callout-text">
+            <h2>Make your Mug stand out</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+              soluta laborum dolore obcaecati repudiandae minima magni cumque
+              tenetur quam incidunt est, quod vel magnam corporis, beatae
+              repellat suscipit eligendi sed incidunt est, quod vel magnam
+              corporis, beatae. Consectetur adipisicing elit. Eos soluta laborum
+              dolore.
+            </p>
+          </div>
+        </div>
+        <div class="callout">
+          <picture>
+            <img
+              src="/assets/img/callout-2.png"
+              alt="High-Quality Stickers Built to Last"
+            />
+          </picture>
+          <div class="callout-text">
+            <h2>Your Mug has its own place</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+              soluta laborum dolore obcaecati repudiandae minima magni cumque
+              tenetur quam incidunt est, quod vel magnam corporis, beatae
+              repellat suscipit eligendi sed incidunt est, quod vel magnam
+              corporis, beatae. Consectetur adipisicing elit. Eos soluta laborum
+              dolore.
+            </p>
+          </div>
+        </div>
+        <div class="callout">
+          <picture>
+            <img src="/assets/img/callout-3.png" alt="Perfect for Gifting" />
+          </picture>
+          <div class="callout-text">
+            <h2>Don't be a poor developer</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+              soluta laborum dolore obcaecati repudiandae minima magni cumque
+              tenetur quam incidunt est, quod vel magnam corporis, beatae
+              repellat suscipit eligendi sed incidunt est, quod vel magnam
+              corporis, beatae. Consectetur adipisicing elit. Eos soluta laborum
+              dolore.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container align-center justify-center">
+        <p>
+          Example online store website for the
+          <a
+            href="https://docs.google.com/presentation/d/1um41RPCBSwlhhdv1TRYGYKKnRbjQvm7DsDBk4aEETrs/edit#slide=id.g311fd1a7e35_0_0"
+            >WedPerf training session</a
+          >
+          workshop by
+          <a href="https://www.linkedin.com/in/ibanlopez/">Ibán López</a>.
+        </p>
+        <p>Not intended for production use.</p>
+      </div>
+    </footer>
+  </body>
+</html>
